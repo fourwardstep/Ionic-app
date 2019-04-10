@@ -1,0 +1,75 @@
+
+<ion-content>
+    <form #profile="ngForm" (ngSubmit)="profileSubmit(profile)"> 
+      <div>
+    <div style="position:relative;background-color:cyan;width:100%;height:40%;">
+        <div style="position:absolute;right: 5px;" *ngIf="lock; else ok_content">
+            <ion-button fill="clear" color="tertiary" strong (click)="editContent()">
+                Edit
+            </ion-button>
+        </div>
+        <div style="display:block;margin-left:40%;">
+          <ion-avatar>
+            <ion-img src="{{ profilePic }}" ></ion-img> </ion-avatar> 
+            <span id="imgedit">
+               <ion-button fill="clear" (click)="openGaller()">
+                  <ion-img src="assets/imgs/edit-icon.png"></ion-img>
+               </ion-button>
+            </span>
+            <p id="name">M S</p>
+            <p id="loc">Markham , ON</p>
+        </div>
+    </div>
+   
+      <ion-list>
+          <ion-item-divider>
+            <ion-label>
+              Resume from the cloud
+            </ion-label>
+          </ion-item-divider>
+          <ion-item class="items">
+              <ion-label> 
+                  {{ resumeName }}
+                  <div text-right>
+                      <button ion-button  icon-only clear (click)="uploadFile()">
+                          <ion-icon name="ios-cloud-upload"></ion-icon>
+                      </button>
+                  </div>
+              </ion-label>
+          </ion-item>
+          <ion-item-divider>
+              <ion-label>
+                Summary
+              </ion-label>
+            </ion-item-divider>
+            <ion-item class="items">
+                <ion-input [(ngModel)]="about" name="about" placeholder="A little about you" [disabled]="lock"></ion-input>
+            </ion-item>
+            <ion-item-divider>
+                <ion-label>
+                Expirence
+                </ion-label>
+              </ion-item-divider>
+              <ion-item class="items">
+                  <ion-input  [(ngModel)]="expirence" name="expirence" placeholder="job Expirence" [disabled]="lock"></ion-input>
+              </ion-item>
+              <ion-item-divider>
+                  <ion-label>
+                    Education
+                  </ion-label>
+                </ion-item-divider>
+                <ion-item class="items">
+                    <ion-input [(ngModel)]="education" name="education" placeholder="University" [disabled]="lock"></ion-input>
+                </ion-item>
+        </ion-list>
+          <div>
+            <ion-button type="submit" expand="block" color="primary">
+                SAVE
+            </ion-button>
+          </div>
+        </div>
+      </form>
+      
+  
+  </ion-content>
+  

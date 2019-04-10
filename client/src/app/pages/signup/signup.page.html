@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)="goback()" color="primary">
+          <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+  
+    <form [formGroup]="user" (ngSubmit)="onSubmit()">
+      <ion-list>
+        <ion-item lines="none" [ngClass]="{'is-invalid':user.controls.name.errors && (user.controls.name.touched || user.controls.name.dirty)}">
+          <ion-label color="primary" position="fixed">FullName</ion-label>
+          <ion-input type="text" formControlName="name"></ion-input>
+        </ion-item>
+        <span  class="is-invalid" id="error" *ngIf="user.controls.name.errors && (user.controls.name.touched || user.controls.name.dirty)">
+          <span *ngIf="user.controls.name.errors.required">
+            FullName field cannot be empty
+          </span>
+        </span>
+
+        <ion-item lines="none" [ngClass]="{'is-invalid':user.controls.email.errors && (user.controls.email.touched || user.controls.email.dirty)}">
+          <ion-label color="primary" position="fixed">Email Id</ion-label>
+          <ion-input type="email" formControlName="email"></ion-input>
+        </ion-item>
+        <span class="is-invalid" id="error" *ngIf="user.controls.email.errors && (user.controls.email.touched || user.controls.email.dirty)">
+            <span *ngIf="user.controls.email.errors.required">
+              Valid email address is required
+            </span>
+            <span *ngIf="user.controls.email.errors.email">Invalid email address</span>
+          </span>
+
+        <ion-item lines="none" [ngClass]="{'is-invalid':user.controls.username.errors && (user.controls.username.touched || user.controls.username.dirty)}">
+          <ion-label color="primary" position="fixed">UserName</ion-label>
+          <ion-input type="text" formControlName="username"></ion-input>
+        </ion-item>
+        <span class="is-invalid" id="error" *ngIf="user.controls.username.errors && (user.controls.username.touched || user.controls.username.dirty)">
+            <span *ngIf="user.controls.username.errors.required">
+              UserName field cannot be empty
+            </span>
+          </span>
+
+        <ion-item lines="none" [ngClass]="{'is-invalid':user.controls.password.errors && (user.controls.password.touched || user.controls.password.dirty)}">
+          <ion-label color="primary" position="fixed">Password</ion-label>
+          <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+        <span class="is-invalid" id="error" *ngIf="user.controls.password.errors && (user.controls.password.touched || user.controls.password.dirty)">
+            <span *ngIf="user.controls.password.errors.required">
+              Password field cannot be empty
+            </span>
+            <span *ngIf="user.controls.password.errors.minlength || user.controls.password.errors.maxlength">
+              Password must be greater than 6 characters and less than 10 characters
+            </span>
+          </span>
+
+        <ion-item lines="none" text-center>
+          <p id="terms">I agree to the <i style="color:slateblue;" (click)="termspage()">Terms of Usage</i> and <i style="color:slateblue;" (click)="privacypage()">Privacy Policy</i></p>
+        </ion-item>
+
+        <div>
+          <ion-button type="submit" style="font-size:18px;" strong color="tertiary" [disabled]="user.invalid" expand="block">Submit</ion-button>
+        </div>
+      </ion-list>
+    </form>
+  
+  </ion-content>

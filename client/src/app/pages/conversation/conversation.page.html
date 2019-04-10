@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>conversation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-content>
+        <ion-list *ngFor="let appliedjob of this.service.companies">
+            <ion-item (click)="gotoChatbox()">
+              <ion-avatar slot="start">
+                  <div id="text">
+                      <h6>{{ appliedjob[0] }}</h6>
+                   </div>
+                 <ion-icon name="checkmark-circle"></ion-icon> 
+              </ion-avatar>
+              <h3>{{ appliedjob}}</h3>
+            </ion-item>
+          </ion-list>
+      </ion-content>
+
+</ion-content>

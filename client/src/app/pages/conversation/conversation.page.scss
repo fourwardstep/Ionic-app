@@ -1,0 +1,28 @@
+ion-avatar{
+    display: flex;
+}
+ion-avatar > #text {
+    align-content: center;
+}
+#text {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #C0C0C0;
+}
+#text >h6 {
+    position: absolute;
+    top: 12%;
+    left :40%;
+    transform: translate(-12%,-45%);
+}
+ion-avatar{
+    position: relative;
+    ion-icon{
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+        color: rgb(23, 201, 23);
+    }
+}

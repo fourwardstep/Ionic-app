@@ -1,0 +1,93 @@
+
+#container {
+    position: relative;
+    color: white;
+
+}
+#imgbot1 {
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+#imgbot2 {
+    position: absolute;
+    top: 170px;
+    left: 5px;
+    font-size: 13px;
+    font-weight: 300;
+
+}
+#imgbot3 {
+    position: absolute;
+    top: 185px;
+    left: 5px;
+    font-size: 11px;
+    
+}
+.button {
+    width: 48%;
+    height: 40px;
+
+}
+.one {
+    background-color: #FF4D4D;
+}
+.two {
+    background-color: #01C229;
+}
+.one:active {
+    background-color: red;
+}
+.two:active {
+    background-color: green;
+}
+
+.toolbar-background {
+    background-color: white;
+}
+.ion-item {
+    background: #F8F8F8;
+    
+}
+
+.txt {
+    
+    font-size: 14px;
+}
+.rf {
+    color: grey;
+}
+.lf {
+    font-weight: bold;
+    
+}
+.ds {
+    color: grey;
+    font-size: 14px;
+    margin-top: 8px;
+    padding-bottom: 20px;
+}
+
+.sm {
+    color: silver;
+    text-align: center;
+}
+.tag {
+    color: #4B0082;
+    font-weight: 1000;
+    font-size: 18px;
+    text-align: center;
+}
+
+#buttons {
+    display: block;
+    margin: auto
+}
+#end {
+    position: relative;
+    right: 0;
+}
+

@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="color:blueviolet;font-weight:bold;" text-center>UPDATE YOUR PROFILE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="this.service.updatedUser" (ngSubmit)="onSubmit()">
+    <ion-list>
+      <ion-input type="hidden" formControlName="_id"></ion-input>
+      <ion-item  lines="none" [ngClass]="{'is-invalid':this.service.updatedUser.controls.name.errors && (this.service.updatedUser.controls.name.touched || this.service.updatedUser.controls.name.dirty)}">
+        <ion-label>FullName</ion-label>
+        <ion-input type="text" formControlName="name"></ion-input>
+      </ion-item>
+      <span  class="is-invalid" id="error" *ngIf="this.service.updatedUser.controls.name.errors && (this.service.updatedUser.controls.name.touched || this.service.updatedUser.controls.name.dirty)">
+        <span *ngIf="this.service.updatedUser.controls.name.errors.required">
+          FullName field cannot be empty
+        </span>
+      </span>
+
+      <ion-item lines="none" [ngClass]="{'is-invalid':this.service.updatedUser.controls.email.errors && (this.service.updatedUser.controls.email.touched || this.service.updatedUser.controls.email.dirty)}">
+        <ion-label>Email Id</ion-label>
+        <ion-input type="email" formControlName="email"></ion-input>
+      </ion-item>
+      <span  class="is-invalid" id="error" *ngIf="this.service.updatedUser.controls.email.errors && (this.service.updatedUser.controls.email.touched || this.service.updatedUser.controls.email.dirty)">
+        <span *ngIf="this.service.updatedUser.controls.email.errors.required">
+          Email field cannot be empty
+        </span>
+      </span>
+
+      <ion-item lines="none" [ngClass]="{'is-invalid':this.service.updatedUser.controls.username.errors && (this.service.updatedUser.controls.username.touched || this.service.updatedUser.controls.username.dirty)}"> 
+        <ion-label>UserName</ion-label>
+        <ion-input type="text" formControlName="username"></ion-input>
+      </ion-item>
+      <span  class="is-invalid" id="error" *ngIf="this.service.updatedUser.controls.username.errors && (this.service.updatedUser.controls.username.touched || this.service.updatedUser.controls.username.dirty)">
+        <span *ngIf="this.service.updatedUser.controls.username.errors.required">
+          UserName field cannot be empty
+        </span>
+      </span>
+
+      <ion-item lines="none" [ngClass]="{'is-invalid':this.service.updatedUser.controls.phone.errors && (this.service.updatedUser.controls.phone.touched || this.service.updatedUser.controls.phone.dirty)}">
+        <ion-label>phone</ion-label>
+        <ion-input type="text" formControlName="phone"></ion-input>
+      </ion-item>
+      <span  class="is-invalid" id="error" *ngIf="this.service.updatedUser.controls.phone.errors && (this.service.updatedUser.controls.phone.touched || this.service.updatedUser.controls.phone.dirty)">
+        <span *ngIf="this.service.updatedUser.controls.phone.errors.required">
+          Phone number field cannot be empty
+        </span>
+      </span>
+
+      <ion-item lines="none" [ngClass]="{'is-invalid':this.service.updatedUser.controls.title.errors && (this.service.updatedUser.controls.title.touched || this.service.updatedUser.controls.title.dirty)}">
+        <ion-label>Title</ion-label>
+        <ion-input type="text" formControlName="title"></ion-input>
+      </ion-item>
+      <span  class="is-invalid" id="error" *ngIf="this.service.updatedUser.controls.title.errors && (this.service.updatedUser.controls.title.touched || this.service.updatedUser.controls.name.dirty)">
+        <span *ngIf="this.service.updatedUser.controls.title.errors.required">
+          Title field cannot be empty
+        </span>
+      </span>
+
+      <ion-item lines="none" [ngClass]="{'is-invalid':this.service.updatedUser.controls.company.errors && (this.service.updatedUser.controls.company.touched || this.service.updatedUser.controls.company.dirty)}">
+        <ion-label>Company</ion-label>
+        <ion-input type="text" formControlName="company"></ion-input>
+      </ion-item>
+      <span  class="is-invalid" id="error" *ngIf="this.service.updatedUser.controls.company.errors && (this.service.updatedUser.controls.company.touched || this.service.updatedUser.controls.company.dirty)">
+        <span *ngIf="this.service.updatedUser.controls.company.errors.required">
+          Company field cannot be empty
+        </span>
+      </span>
+
+      <ion-item lines="none" [ngClass]="{'is-invalid':this.service.updatedUser.controls.location.errors && (this.service.updatedUser.controls.location.touched || this.service.updatedUser.controls.location.dirty)}">
+        <ion-label>Location</ion-label>
+        <ion-input type="text" formControlName="location"></ion-input>
+      </ion-item>
+      <span  class="is-invalid" id="error" *ngIf="this.service.updatedUser.controls.location.errors && (this.service.updatedUser.controls.location.touched || this.service.updatedUser.controls.location.dirty)">
+        <span *ngIf="this.service.updatedUser.controls.location.errors.required">
+          Location field cannot be empty
+        </span>
+      </span>
+
+      <ion-item lines="none" [ngClass]="{'is-invalid':this.service.updatedUser.controls.education.errors && (this.service.updatedUser.controls.education.touched || this.service.updatedUser.controls.education.dirty)}">
+        <ion-label>Education</ion-label>
+        <ion-input type="text" formControlName="education"></ion-input>
+      </ion-item>
+      <span  class="is-invalid" id="error" *ngIf="this.service.updatedUser.controls.education.errors && (this.service.updatedUser.controls.education.touched || this.service.updatedUser.controls.education.dirty)">
+        <span *ngIf="this.service.updatedUser.controls.education.errors.required">
+          Education field cannot be empty
+        </span>
+      </span>
+
+      <div>
+        <ion-button type="submit" color="tertiary" expand="block">Submit</ion-button>
+      </div>
+    </ion-list>
+  </form>
+
+</ion-content>

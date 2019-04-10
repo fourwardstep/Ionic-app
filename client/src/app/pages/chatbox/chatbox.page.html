@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar hideBackButton>
+    <ion-buttons slot="start">
+      <ion-button fill="clear" style="font-size:larger" color="danger" (click)="goBack()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" strong color="dark">Details</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div style="font-size:10px; text-align:center;">7 minutes ago</div>
+  <ion-list no-lines class="msgbubble" *ngFor="let msg of messages">
+    <div class="innermsg left" text-left *ngIf="userId != msg.id ">
+      {{ msg.reply }}
+    </div>
+    <div class="innermsg right" text-right *ngIf="userId == msg.id">
+      {{ msg.reply }}
+    </div>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-input placeholder="Type here" [(ngModel)]="question" type="text"></ion-input>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" strong color="secondary" (click)="ask(question)">
+        <ion-icon name="send"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

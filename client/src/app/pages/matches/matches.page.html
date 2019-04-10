@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="end" *ngIf="searchbar else icononly">
+        <ion-button color="secondary" fill="clear"  (click)="opensearchbar()">
+          <ion-icon name="ios-search" ></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ng-template #icononly>
+          <ion-searchbar text-center></ion-searchbar>
+      </ng-template>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+
+  <ion-tabs>
+    <ion-tab-bar slot="top">
+      <ion-tab-button tab="matches/applied">
+        <ion-label>APPLIED</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="matches/failed">
+        <ion-label>FAILED</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="matches/saved">
+        <ion-label>SAVED</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-content>

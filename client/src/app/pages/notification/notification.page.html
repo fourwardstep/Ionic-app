@@ -1,0 +1,19 @@
+<ion-content>
+	<img src="assets/imgs/notif2.PNG" style="display:block;margin:auto;margin-top:50px;width: 60%;">
+
+	<p text-center><b>Please turn on Notifications</b></p>
+	<div text-center>
+		This includes email and push notifications,<br>
+		about job postings and other content.<br>
+		You can withdraw consent at any time,or<br>
+		change prefernces in Settings
+	</div>
+	
+	<ion-button color="secondary" strong style="display:block;margin:auto;" (click)="toPolicypage()" fill="clear" >PRIVACY POLICY</ion-button><br>
+	<div text-center>
+	<ion-button  color="danger" fill="outline"
+		(click)="notnow()">NOT NOW</ion-button>
+
+	<ion-button color="tertiary" style="width:100px;" (click)="acccessNofification()">OK</ion-button>
+</div>
+</ion-content>

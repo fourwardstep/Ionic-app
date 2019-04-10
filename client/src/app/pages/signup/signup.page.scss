@@ -1,0 +1,42 @@
+#terms {
+    font-size:15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.is-invalid {
+    color: red;
+}
+
+#error {
+    font-size: 14px;
+    display: flex;
+}
+
+#error > span {
+    justify-content: center;
+}
+
+
+ion-label {
+    margin-right : 20px;
+}
+
+ion-list {
+    
+    margin:15px;
+}
+
+ion-item {
+    border :1px solid whitesmoke;    
+    background-color: blanchedalmond;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10%;
+}
+
+ion-input {
+    color: darkorchid;
+}
+
+

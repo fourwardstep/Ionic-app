@@ -1,0 +1,66 @@
+ion-content {
+    position: relative;
+}
+#signin {
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+#cologo {
+    width:60%;
+    height: 200px;
+    position: absolute;
+    top:10%;;
+    left :50%;
+    transform: translate(-50%,-10%);
+}
+
+#caption {
+    color:#0bb8cc;
+    font-size: bold;
+    width:60%;
+    position: absolute;
+    top :25%;
+    left: 20%;
+    text-align: center;
+}
+
+#linkedin {
+    width:60%;
+    height: 15%;
+    position: absolute;
+    top : 45%;
+    left: 45%;
+    transform: translate(-45%,-45%);
+}
+
+#facebook {
+    width:63%;
+    height: 15%;
+    position: absolute;
+    top :55%;
+    left:51%;
+    transform: translate(-55%,-51%);
+}
+
+#terms {
+    width: 62%;
+    font-size:13px;
+    font-weight: bold;
+    position: absolute;
+    top : 60%;
+    left:55%;
+    transform: translate(-60%,-55%);
+    text-align: center;
+}
+
+#signup {
+    position: absolute;
+    top : 70%;
+    left:50%;
+    transform: translate(-50%,-70%);
+    font-size: 20px;
+    font-weight: bold;
+}

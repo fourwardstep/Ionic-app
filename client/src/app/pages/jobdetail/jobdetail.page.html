@@ -1,0 +1,82 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button fill="clear" style="font-size:15px;" color="tertiary" (click)="minimizePage()">
+        <ion-icon slot="icon-only" name="arrow-dropleft"></ion-icon>
+      </ion-button>
+      <ion-title style="color:#6a0574;font-size: 20px; display:block;margin-left:atuo;margin-right:auto;">JOB DETAILS
+      </ion-title>
+
+      <ion-button fill="clear" style="font-size:15px;" color="tertiary" (click)="moreOptions()">
+        <ion-icon slot="icon-only" name="more"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+
+
+  <div class="sticky"></div>
+  <div id="container">
+    <img src="assets/imgs/lap.jpg" style="height: 210px;width: 100%">
+    <div id="imgbot1">{{ company }}</div>
+    <div id="imgbot2">{{ jobtitle }}</div>
+    <div id="imgbot3">opportunity: intelligent and great</div>
+
+  </div>
+  <div>
+    <ion-card>
+      <ion-item class="ion-item">
+        <h6>Basic Info</h6>
+      </ion-item>
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col class="txt lf">Date posted</ion-col>
+            <ion-col class="txt rf">4 days ago</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="txt lf">Location</ion-col>
+            <ion-col class="txt rf">{{ location }}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="txt lf">Type</ion-col>
+            <ion-col class="txt rf">{{ jobtype }}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="txt lf">Salary</ion-col>
+            <ion-col class="txt rf">Competitive salary</ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div>
+    <ion-card>
+      <ion-card-header class="ion-item">
+        <ion-item>Details</ion-item>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="ds">
+          {{ jobdescription }}
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+  <p class="sm">Listed from</p>
+  <p class="tag">STEPFOURWARD</p>
+
+</ion-content>
+
+<ion-footer>
+
+  <ion-toolbar>
+    <div id="buttons">
+      <ion-button color="danger" strong (click)="cancelbtn()">Pass</ion-button>
+      <ion-button color="success" strong (click)="applyjob()">Apply</ion-button>
+    </div>
+  </ion-toolbar>
+
+</ion-footer>

@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button (click)="goback()" color="primary">
+                <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+              </ion-button>
+          </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding>
+  
+    <form [formGroup]="usercred" (ngSubmit)="onSubmit()">
+        <ion-item lines="none" [ngClass]="{'is-invalid':usercred.controls.username.errors && (usercred.controls.username.touched || usercred.controls.username.dirty)}">
+          <ion-label color="secondary" position="fixed">{{ readUsernames ? "Reading...": 'Username' }}</ion-label>
+            <ion-input type="text" formControlName="username" (ngModelChange)="readUserName()"></ion-input>
+          </ion-item>
+          <span class="is-invalid" id="error" *ngIf="usercred.controls.username.errors && (usercred.controls.username.touched || usercred.controls.username.dirty)">
+            <span *ngIf="usercred.controls.username.errors.required">
+              Username field cannot be empty
+            </span>
+          </span>
+          <ion-item lines="none" [ngClass]="{'is-invalid':usercred.controls.password.errors && (usercred.controls.password.touched || usercred.controls.password.dirty)}">
+            <ion-label color="secondary" position="fixed">{{ readPswd ? "Reading...": 'Password' }}</ion-label>
+            <ion-input type="password" formControlName="password" (ngModelChange)="readPassword()"></ion-input>
+          </ion-item>
+          <span class="is-invalid" id="error" *ngIf="usercred.controls.password.errors && (usercred.controls.password.touched || usercred.controls.password.dirty)">
+            <span *ngIf="usercred.controls.password.errors.required">
+              Password field cannot be empty
+            </span>
+            <span *ngIf="usercred.controls.password.errors.minlength || usercred.controls.password.errors.maxlength">
+              Password must be greater than 6 characters and less than 10 characters
+            </span>
+          </span>
+          <div>
+            <ion-button type="submit" color="success" [disabled]="usercred.invalid" expand="block">Submit</ion-button>
+            <ion-button strong type="button" size="large" fill="clear" expand="block" color="danger" (click)="forgotPassword()">FORGOT PASSWORD</ion-button>
+          </div>
+    </form>
+  
+  </ion-content>
