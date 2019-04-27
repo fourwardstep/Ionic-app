@@ -1,7 +1,5 @@
-p {
-    font-size: 14px;
-    font-weight: 400;
-
+#top {
+    font-size: 12px;
 }
 ion-input {
     border-radius: 5px;
@@ -54,4 +52,78 @@ ion-input {
 
 .msgbubble {
     margin-bottom: 10px;
+}
+
+@media screen and (min-width:768px){
+
+    #top {
+        font-size: 20px;
+    }
+
+    ion-input[placeholder] {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    .innermsg.left {
+        font-size: 25px;
+        float: right;
+        background-color: #F1F0F0;
+        color: black;
+        clear: both;
+    }
+    
+    .innermsg.right {
+        font-size: 25px;
+        float: left;
+        //margin-right: 10%;
+        background-color: #0084FF;
+        color: white;
+        clear: both;
+    }
+
+    #back, #details {
+        font-size: 25px;
+    }
+
+    #download, #send {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (min-width:992px){
+
+    #top {
+        font-size: 24px;
+    }
+
+    ion-input[placeholder] {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .innermsg.left {
+        font-size: 30px;
+        float: right;
+        background-color: #F1F0F0;
+        color: black;
+        clear: both;
+    }
+    
+    .innermsg.right {
+        font-size: 30px;
+        float: left;
+        //margin-right: 10%;
+        background-color: #0084FF;
+        color: white;
+        clear: both;
+    }
+
+    #back, #details {
+        font-size: 35px;
+    }
+
+    #download, #send {
+        font-size: 32px;
+    }
+
 }

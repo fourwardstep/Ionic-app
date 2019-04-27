@@ -1,4 +1,57 @@
-ion-label {
-    font-size: 18px;
-    font-weight: bold;
+ion-button {
+    font-size: 14px;
+}
+
+.list1, .list2 {
+    margin-top: 30px;
+}
+
+
+
+@media screen and (min-width : 320px) {   
+
+    ion-button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width : 375px) {   
+
+    ion-button {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width : 768px) {   
+
+    .list1, .list2 {
+        margin-top: 40px;
+    }
+
+    ion-item {
+        font-size: 25px;
+        padding: 10px;  
+    }
+
+    ion-button {
+        font-size: 24px;
+    }
+    
+}
+
+@media screen and (min-width : 992px) {   
+
+    .list1, .list2 {
+        margin-top: 50px;
+    }
+
+    ion-item {
+        font-size: 35px;
+        padding: 15px;  
+    }
+
+    ion-button {
+        font-size: 30px;
+    }
+    
 }

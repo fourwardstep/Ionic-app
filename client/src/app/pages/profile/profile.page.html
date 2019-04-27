@@ -1,27 +1,70 @@
 
 <ion-content>
     <form #profile="ngForm" (ngSubmit)="profileSubmit(profile)"> 
-      <div>
-    <div style="position:relative;background-color:cyan;width:100%;height:40%;">
-        <div style="position:absolute;right: 5px;" *ngIf="lock; else ok_content">
-            <ion-button fill="clear" color="tertiary" strong (click)="editContent()">
-                Edit
-            </ion-button>
+      
+      <div class="container">
+
+          <div class="edit" *ngIf="lock; else ok_content">
+              <ion-button fill="clear" (click)="editContent()">
+                  Import
+              </ion-button>
+          </div>
+
+          <div class="profilepic">
+              <ion-avatar>
+                <ion-img src="{{profilePic}}" (click)="openGaller()"></ion-img> 
+              </ion-avatar> 
+            </div>
+            <div class="name">
+                <h5 text-center>M S</h5>
+                <p text-center>Markham, ON</p>
+              </div>
+
+      </div>
+
+      <div class="divider">
+          <span class="p">RESUME FROM THE CLOUD</span>
+          <span class="h6" (click)="uploadFile()">Edit &nbsp; &nbsp; <i class="fas fa-chevron-right"></i></span>
         </div>
-        <div style="display:block;margin-left:40%;">
-          <ion-avatar>
-            <ion-img src="{{ profilePic }}" ></ion-img> </ion-avatar> 
-            <span id="imgedit">
-               <ion-button fill="clear" (click)="openGaller()">
-                  <ion-img src="assets/imgs/edit-icon.png"></ion-img>
-               </ion-button>
-            </span>
-            <p id="name">M S</p>
-            <p id="loc">Markham , ON</p>
+
+        <div class="content">
+          <span class="h5">Uploaded Resume :</span>
+          <span class="p1">View</span><br>
+          <span class="p2">Not Uploaded</span> 
         </div>
-    </div>
+
+        <div class="divider">
+            <span class="p">SUMMARY</span>
+            <span class="h6">Edit &nbsp; &nbsp; <i class="fas fa-chevron-right"></i></span>
+          </div>
+
+          <div class="content1">
+              <span class="p3">A little bit about you</span><br> 
+            </div>
+
+            <div class="divider">
+                <span class="p">EXPERIENCE</span>
+                <span class="h6">Edit &nbsp; &nbsp; <i class="fas fa-chevron-right"></i></span>
+              </div>
+      
+              <div class="content">
+                <span class="h5">Software Engineer</span><br>
+                <span class="p2">Not Provided</span> 
+              </div>
+
+              <div class="divider">
+                  <span class="p">EDUCATION</span>
+                  <span class="h6">Edit &nbsp; &nbsp; <i class="fas fa-chevron-right"></i></span>
+                </div>
+        
+                <div class="content">
+                  <span class="h5">Not Provided</span><br>
+                  <span class="p2">University of Torinto</span> 
+                </div>
    
-      <ion-list>
+      <!-- <ion-list>
+
+        
           <ion-item-divider>
             <ion-label>
               Resume from the cloud
@@ -61,13 +104,13 @@
                 <ion-item class="items">
                     <ion-input [(ngModel)]="education" name="education" placeholder="University" [disabled]="lock"></ion-input>
                 </ion-item>
-        </ion-list>
-          <div>
-            <ion-button type="submit" expand="block" color="primary">
+        </ion-list> -->
+          <!-- <div class="submit">
+            <ion-button type="submit" expand="block" color="secondary">
                 SAVE
             </ion-button>
-          </div>
-        </div>
+          </div> -->
+        
       </form>
       
   

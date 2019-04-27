@@ -1,66 +1,69 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>settings</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content color="light">
-  <ion-list>
 
-    <ion-item>
-      <ion-button fill="clear" color="dark">
-        <ion-label>Invite Friends</ion-label>
-      </ion-button>
-    </ion-item>
 
-    <ion-item>
-      <ion-button fill="clear" color="dark">
-        <ion-label>Frequently Asked Questions</ion-label>
-      </ion-button>
-    </ion-item>
+      <ion-list lines="full" class="list1">
+          <ion-item>
+              <ion-button fill="clear" color="dark">
+                <ion-label>Invite Friends</ion-label>
+              </ion-button>
+            </ion-item>
+        
+            <ion-item>
+              <ion-button fill="clear" color="dark">
+                <ion-label>Frequently Asked Questions</ion-label>
+              </ion-button>
+            </ion-item>
+        
+            <ion-item>
+              <ion-button fill="clear" (click)="gototermspage()" color="dark">
+                <ion-label>Terms and Usage</ion-label>
+              </ion-button>
+            </ion-item>
+        
+            <ion-item>
+              <ion-button fill="clear" color="dark">
+                <ion-label>Help and Feedback</ion-label>
+              </ion-button>
+            </ion-item>
+        
+            <ion-item lines="none">
+              <ion-button fill="clear" (click)="gotoPolicyPage()" color="dark">
+                <ion-label>Privacy Policy</ion-label>
+              </ion-button>
+            </ion-item>
+      </ion-list>
 
-    <ion-item>
-      <ion-button fill="clear" (click)="gototermspage()" color="dark">
-        <ion-label>Terms and Usage</ion-label>
-      </ion-button>
-    </ion-item>
+   
 
-    <ion-item>
-      <ion-button fill="clear" color="dark">
-        <ion-label>Help and Feedback</ion-label>
-      </ion-button>
-    </ion-item>
+        <ion-list lines="full" class="list2">
+            <ion-item>
+              <ion-button fill="clear" color="dark">
+                <ion-label>Rate STEPFOURWARD!</ion-label>
+              </ion-button>
+            </ion-item>
+        
+            <ion-item>
+              <ion-button fill="clear" color="dark">
+                <ion-label>Communications</ion-label>
+              </ion-button>
+            </ion-item>
+        
+            <ion-item>
+              <ion-button fill="clear" color="danger" (click)="deleteAccount()">
+                <ion-label>Delete my Account</ion-label>
+              </ion-button>
+            </ion-item>
+        
+            <ion-item lines="none">
+              <ion-button fill="clear" color="secondary" strong (click)="logout()">
+                <ion-label>Sign Out</ion-label>
+              </ion-button>
+            </ion-item>
+        
+          </ion-list>
+        
 
-    <ion-item>
-      <ion-button fill="clear" (click)="gotoPolicyPage()" color="dark">
-        <ion-label>Privacy Policy</ion-label>
-      </ion-button>
-    </ion-item>
-
-    <ion-item>
-      <ion-button fill="clear" color="dark">
-        <ion-label>Rate STEPFOURWARD!</ion-label>
-      </ion-button>
-    </ion-item>
-
-    <ion-item>
-      <ion-button fill="clear" color="dark">
-        <ion-label>Communications</ion-label>
-      </ion-button>
-    </ion-item>
-
-    <ion-item>
-      <ion-button fill="clear" color="danger" (click)="deleteAccount()">
-        <ion-label>Delete my Account</ion-label>
-      </ion-button>
-    </ion-item>
-
-    <ion-item>
-      <ion-button fill="clear" color="secondary" strong (click)="logout()">
-        <ion-label>Sign Out</ion-label>
-      </ion-button>
-    </ion-item>
-
-  </ion-list>
-
+  
 </ion-content>

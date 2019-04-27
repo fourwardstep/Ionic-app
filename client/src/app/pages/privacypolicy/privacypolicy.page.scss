@@ -1,15 +1,60 @@
-page-policy {
+
     #content{
-        background-color: whitesmoke;
+        background-color: #FFFFFF;
     }
     #cardcontent {
         color: grey;
-        font-size: 12px;
+        font-size: 15px;
     }
-    #arrowbtn{
-        color: #3CABE2;
-        
+    
+    ion-toolbar {
+        font-size: 18px;
+    }
+
+    ion-title {
+        font-size: 18px;
+        font-weight: bold;
     }
     
 
+@media screen and (min-width:768px){
+
+    ion-toolbar {
+        padding: 20px;
+        align-self: center;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    ion-title {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    #cardcontent {
+        font-size: 22px;
+    }
+    ion-button {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width:992px){
+
+    ion-toolbar {
+        padding: 20px;
+        align-self: center;
+        margin-top: 15px;
+        font-size: 35px;
+    }
+
+    ion-title {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    #cardcontent {
+        font-size: 28px;
+    }
+    ion-button {
+        font-size: 25px;
+    }
 }

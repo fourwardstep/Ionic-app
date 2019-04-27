@@ -15,7 +15,7 @@ export class HomePage {
 
   clientId = '81o5adcju2ish4';
   clientSecret = 'psZvCvVd23O4PRBP';
-  redirect_uri = "http://10.0.2.2:5584/location";
+  redirect_uri = "http://localhost";
   state = 'hjfdhjGj12j';
   appScope = 'r_basicprofile%20r_emailaddress';
   linkedinURL: any;

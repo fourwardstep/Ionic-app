@@ -1,46 +1,197 @@
-ion-avatar{
-    display: flex;
-}
-ion-avatar > #text {
-    align-content: center;
-}
-#text {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #C0C0C0;
-}
-#text >h6 {
-    position: absolute;
-    top: 12%;
-    left :40%;
-    transform: translate(-12%,-45%);
-}
-#p{
-    font-size: 12px;
-    line-height: 1.2;
-}
-#p1 {
-    font-size: 10px;
-    line-height: 1.2;
-}
-.avatar{
-    background-color: #C0C0C0;
-}
-.no-scroll .scroll-content {
-    overflow: auto;
-}
-.check {
-    position: relative;
-    top: 5px;
-}
-ion-avatar{
-    position: relative;
-    ion-icon{
-        position: absolute;
-        bottom: -5px;
-        right: -5px;
-        color: rgb(23, 201, 23);
+
+    
+    #p{
+        font-size: 14px;
+        line-height: 1.2;
     }
-}
+    #p1 {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+    .avatar{
+        background-color: #C0C0C0;
+    }
+    .no-scroll .scroll-content {
+        overflow: auto;
+    }
+    .check {
+        position: relative;
+        top: 5px;
+    }
+    ion-avatar{
+        position: relative;
+        ion-icon{
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+            color: rgb(23, 201, 23);
+        }
+    }
+    ion-avatar{
+        display: flex;
+        margin-left: 10px;
+    }
+    ion-avatar > #text {
+        align-content: center;
+    }
+
+    ion-avatar {
+        width: 45px;
+        height: 45px;
+        margin-left: 5px;
+    }
+
+    #text {
+        position: relative;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: rgb(199, 191, 191);
+    }
+    #text >h6 {
+        position: absolute;
+        top: 12%;
+        left :40%;
+        transform: translate(-12%,-45%);
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    
+    h5 {
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+    }
+
+    @media screen and (min-width:768px) {
+
+        ion-avatar {
+            width: 70px;
+            height: 70px;
+            margin-left: 10px;
+        }
+
+       #text {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+
+      #text > h6 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+
+        ion-label {
+        margin-left: 25px;    
+        }
+
+         
+         h5 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        #p{
+            font-size: 22px;
+            line-height: 1.2;
+        }
+        #p1 {
+            font-size: 20px;
+            line-height: 1.2;
+        }
+
+        ion-avatar{
+            position: relative;
+            ion-icon{
+                position: absolute;
+                bottom: -5px;
+                right: -5px;
+                color: rgb(23, 201, 23);
+                font-size: 30px;
+                
+            }
+        }
+        ion-avatar{
+            display: flex;
+        }
+        ion-avatar > #text {
+            align-content: center;
+        }
+        #text >h6 {
+            position: absolute;
+            top: 22%;
+            left :40%;
+            transform: translate(-22%,-40%);
+            color: #ffffff;
+
+        }
+    }
+
+    @media screen and (min-width:992px) {
+
+        ion-avatar {
+            width: 85px;
+            height: 85px;
+            margin-left: 20px;
+        }
+
+       #text {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+        }
+
+      #text > h6 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+
+        ion-label {
+        margin-left: 35px;    
+        }
+
+         
+         h5 {
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        #p{
+            font-size: 24px;
+            line-height: 1.2;
+        }
+        #p1 {
+            font-size: 22px;
+            line-height: 1.2;
+        }
+
+        ion-avatar{
+            position: relative;
+            ion-icon{
+                position: absolute;
+                bottom: -5px;
+                right: -5px;
+                color: rgb(23, 201, 23);
+                font-size: 35px;
+                
+            }
+        }
+        ion-avatar{
+            display: flex;
+        }
+        ion-avatar > #text {
+            align-content: center;
+        }
+        #text >h6 {
+            position: absolute;
+            top: 25%;
+            left :40%;
+            transform: translate(-25%,-40%);
+            color: #ffffff;
+
+        }
+    }

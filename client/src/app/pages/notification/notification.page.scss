@@ -1,2 +1,263 @@
+ion-content {
+    position: relative;
+    box-sizing: border-box;
+}
 
+div.logo {
+    position: absolute;
+    top: 10%;
+    display: block;
+    width: 80%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+div.caption {
+    position: absolute;
+    top: 43%;
+    width: 80%;
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+}
+
+ div.caption p {
+    color: #0cd1e8;
+    text-align: center;
+    font-size: 18px;
+}
+
+div.text {
+    position: absolute;
+    top: 52%;
+    width: 90%;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;   
+}
+
+ div.text p {
+    color: #a2a4ab;
+    text-align: center;
+    font-size: 18px;
+}
+
+div.text1 {
+    position: absolute;
+    top: 73%;
+    width: 90%;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;  
+}
+
+div.text1 p {
+    color: #a2a4ab;
+    text-align: center;
+    font-size: 18px;
+}
+
+div.text2 {
+    position: absolute;
+    top : 85%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right:5%;
+}
+
+div.text2 > ion-button {
+    width : 43%;
+    height: 45px;
+    margin-left: 3%;
+    margin-right:3%;
+}
+
+div.text2 > .btn1 {
+    color: #b3b4b4;
+}
+
+@media only screen and (max-width : 320px) {
+    div.text p {
+        font-size: 16px;
+    }
+    div.text1 {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (min-width : 768px){
+    ion-content {
+        position: relative;
+        box-sizing: border-box;
+    }
     
+    div.logo {
+        position: absolute;
+        top: 10%;
+        display: block;
+        width: 60%;
+        margin-left:20%;
+        margin-right:20%;
+    }
+    
+    div.caption {
+        position: absolute;
+        top: 46%;
+        width: 80%;
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 30px;
+    }
+    
+     div.caption p {
+        color: #0cd1e8;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    div.text {
+        position: absolute;
+        top: 55%;
+        width: 90%;
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 30px;   
+    }
+    
+     div.text p {
+        color: #a2a4ab;
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    div.text1 {
+        position: absolute;
+        top: 78%;
+        width: 90%;
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 30px;  
+    }
+    
+    div.text1 p {
+        color: #a2a4ab;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    div.text2 {
+        position: absolute;
+        top : 90%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right:5%;
+    }
+    
+    div.text2 > ion-button {
+        width : 43%;
+        height: 60px;
+        margin-left: 3%;
+        margin-right:3%;
+    }
+    
+    div.text2 > .btn1 {
+        color: #b3b4b4;
+    }
+
+    #one, #two {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width : 992px){
+    ion-content {
+        position: relative;
+        box-sizing: border-box;
+    }
+    
+    div.logo {
+        position: absolute;
+        top: 10%;
+        display: block;
+        width: 60%;
+        margin-left:20%;
+        margin-right:20%;
+    }
+    
+    div.caption {
+        position: absolute;
+        top: 50%;
+        width: 80%;
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 30px;
+    }
+    
+     div.caption p {
+        color: #0cd1e8;
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    div.text {
+        position: absolute;
+        top: 60%;
+        width: 90%;
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 30px;   
+    }
+    
+     div.text p {
+        color: #a2a4ab;
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    div.text1 {
+        position: absolute;
+        top: 78%;
+        width: 90%;
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 30px;  
+    }
+    
+    div.text1 p {
+        color: #a2a4ab;
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    div.text2 {
+        position: absolute;
+        top : 90%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right:5%;
+    }
+    
+    div.text2 > ion-button {
+        width : 43%;
+        height: 80px;
+        margin-left: 3%;
+        margin-right:3%;
+    }
+    
+    div.text2 > .btn1 {
+        color: #b3b4b4;
+    }
+
+    #one, #two {
+        font-size: 30px;
+    }
+}

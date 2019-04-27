@@ -1,19 +1,25 @@
 <ion-content>
-	<img src="assets/imgs/notif2.PNG" style="display:block;margin:auto;margin-top:50px;width: 60%;">
 
-	<p text-center><b>Please turn on Notifications</b></p>
-	<div text-center>
-		This includes email and push notifications,<br>
-		about job postings and other content.<br>
-		You can withdraw consent at any time,or<br>
-		change prefernces in Settings
+	<div class="logo">
+		<ion-img src="assets/imgs/noti.PNG" style="width:100%;"></ion-img>
 	</div>
-	
-	<ion-button color="secondary" strong style="display:block;margin:auto;" (click)="toPolicypage()" fill="clear" >PRIVACY POLICY</ion-button><br>
-	<div text-center>
-	<ion-button  color="danger" fill="outline"
-		(click)="notnow()">NOT NOW</ion-button>
+	<div class="caption">
+		<p text-center>Please turn on notifcations</p>
+	</div>
 
-	<ion-button color="tertiary" style="width:100px;" (click)="acccessNofification()">OK</ion-button>
-</div>
+	<div class="text">
+		<p>This is includes email and push notifcations about job postings and other career content.
+			You can withdraw cosent at any time, or change your preferences in Settings.
+		</p>
+	</div>
+
+	<div class="text1">
+		<p (click)="toPolicypage()"><u>Privacy Policy</u></p>
+	</div>
+
+	<div class="text2">
+		<ion-button class="btn1" fill="outline" color="none" (click)="notnow()"><span id="one">NOT NOW</span></ion-button>
+	<ion-button class="btn2" color="secondary" (click)="acccessNofification()" ><span id="two">OK</span></ion-button>
+	</div>
+
 </ion-content>

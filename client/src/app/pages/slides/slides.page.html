@@ -1,31 +1,31 @@
 <ion-content color="dark">
-<div id="main" style="background-color: black;">
-  <ion-button color='secondary'  strong fill="clear" (click)="gotojobs()">SKIP</ion-button>
+<div id="main">
+  <ion-button color='light' fill="clear" (click)="gotojobs()">Skip</ion-button>
 
-  <ion-slides parallax="true" pager="true">
+  <ion-slides pager="true" paginationType="bullets">
 
     <ion-slide>
         <div id="one">
-            <h3 style="color: #1CE75F;">Apply Job</h3>
-            <p id="para">If you are interested in job swipe<br>  the card to the right to apply</p>
+            <h6 text-center>Apply to a Job</h6>
+            <p text-center>If you're interested in a job, swipe the card to the right to apply.</p>
         </div>
-      <ion-img src="assets/imgs/s1.PNG" style="width:185px;height:300px;margin-top:110px;margin-bottom:30px;border-radius:0px;"></ion-img>
+      <ion-img text-center src="assets/imgs/s1.PNG"></ion-img>
     </ion-slide>
 
     <ion-slide>
       <div id="one">
-        <h3 style="color:#F50606;">Skip a Job</h3>
-        <p id="para">If you are interested in job swipe<br>  the card to the right to apply</p>
+        <h6>Skip a Job</h6>
+        <p id="para">If you're not interested in a job, swipe the card to the left to discard.</p>
       </div>
-      <ion-img src="assets/imgs/s22.PNG" style="width:185px; height:300px;margin-top :110px;margin-bottom:30px;"></ion-img>
+      <ion-img src="assets/imgs/s22.PNG"></ion-img>
     </ion-slide>
 
     <ion-slide>
         <div id="one">
-            <h3 style="color:#C206F5;">More Info</h3>
-            <p id="para">If you are interested in job swipe<br>  the card to the right to apply</p>
+            <h6 text-center>More Information</h6>
+            <p text-center>To find out more about a job, tap on the card's photo.</p>
           </div>
-      <ion-img src="assets/imgs/s3.PNG" style="width:185px; height:300px;margin-top :110px;margin-bottom:30px;"></ion-img>
+      <ion-img src="assets/imgs/s3.PNG"></ion-img>
     </ion-slide>
 
   </ion-slides>

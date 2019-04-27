@@ -1,15 +1,15 @@
 <ion-content>
 
-  <ion-list>
+  <ion-list lines="full">
     <ion-item *ngFor="let appliedjob of this.service.appliedJobs">
-      <ion-avatar slot="start" ion-checkbox checked="true">
+      <ion-avatar slot="start">
         <div id="text">
-          <h6>{{ appliedjob.companyTitle.charAt(0) }}</h6>
+          <h6>{{appliedjob.companyTitle.charAt(0)}}</h6>
         </div>
-        <ion-icon name="checkmark-circle"></ion-icon>
+        <ion-icon  name="checkmark-circle"></ion-icon>
       </ion-avatar>
       <ion-label lines="none">
-        <h6>{{ appliedjob.companyTitle }}</h6>
+        <h5>{{ appliedjob.companyTitle }}</h5>
         <p id="p">Applied at {{  appliedjob.date }}</p>
         <p id="p1">{{ appliedjob.jobTitle }}</p>
       </ion-label>

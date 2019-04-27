@@ -1,21 +1,35 @@
 
-<ion-content color="light">
-  <div class="ion-padding">
-    <ion-button id="signin" color="secondary" strong fill="clear" (click)="gotoLogin()">SIGN IN</ion-button>
-    <ion-img id="cologo" src="assets/imgs/logo-png.png"></ion-img>
+<ion-content class="ion-no-padding">
 
-    <p id="caption">The easiest way to find a job</p>
-    
-    <ion-img id="linkedin" src="assets/imgs/linkedin.png" (click)="linkedinLogin()"></ion-img>
+  <div class="signin">
+    <p class="org">STEPFOURWARD</p>
+    <span class="btn1" (click)="gotoLogin()">SIGN IN</span>
+  </div>
 
-    <ion-img id="facebook" src="assets/imgs/facebook-sign-in-button.png" (click)="loginWithFb()"></ion-img>
-    
-    
-    
-     <p id="terms">I agree to the <i style="color:slateblue;" (click)="termspage()">Terms of Usage</i> and <i style="color:slateblue;" (click)="privacypage()">Privacy Policy</i></p>
-    
+  <div class="cologo">
+    <ion-img style="width:100%;" src="assets/imgs/logo-png.png"></ion-img>
+  </div>
 
-    <ion-button id="signup" color="dark" fill="clear" strong expand="full" (click)="gotoSignup()">SIGNUP WITH EMAIL</ion-button>
+  <div class="caption">
+    <p text-center>The easiest way to find a job</p>
+  </div>
 
+  <div class="linkedin">
+
+    <ion-img style="width:100%;" src="assets/imgs/linkedin1.png" (click)="linkedinLogin()"></ion-img>
+  
     </div>
+
+  <div class="facebook">
+
+  <ion-img style="width:100%;" src="assets/imgs/fb1.jpg" (click)="loginWithFb()"></ion-img>
+
+  </div>
+
+  <div class="terms" text-center>
+  I agree to the <u (click)="termspage()">Terms of Usage</u> and <u (click)="privacypage()">Privacy Policy </u> 
+</div>
+
+  <ion-button class="signup" fill="clear" expand="full" (click)="gotoSignup()"><span>Sign Up with Email</span></ion-button>
+
 </ion-content>

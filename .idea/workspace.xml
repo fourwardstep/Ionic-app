@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0c3634c2-8fc1-4317-a74c-9e4effb70522" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/applied/applied.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/applied/applied.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/applied/applied.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/applied/applied.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/chatbox/chatbox.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/chatbox/chatbox.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/chatbox/chatbox.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/chatbox/chatbox.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/conversation/conversation.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/conversation/conversation.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/conversation/conversation.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/conversation/conversation.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/edit-info/edit-info.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/edit-info/edit-info.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/edit-info/edit-info.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/edit-info/edit-info.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/edit-info/edit-info.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/edit-info/edit-info.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/failed/failed.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/failed/failed.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/failed/failed.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/failed/failed.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/feeds/feeds.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/feeds/feeds.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/feeds/feeds.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/feeds/feeds.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/home/home.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/home/home.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/home/home.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/home/home.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/home/home.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/jobdetail/jobdetail.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/jobdetail/jobdetail.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/jobdetail/jobdetail.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/jobdetail/jobdetail.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/jobs/jobs.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/jobs/jobs.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/jobs/jobs.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/jobs/jobs.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/location/location.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/location/location.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/location/location.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/location/location.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/login/login.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/login/login.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/login/login.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/login/login.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/login/login.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/login/login.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/matches/matches.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/matches/matches.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/matches/matches.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/matches/matches.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/modal/modal.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/modal/modal.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/modal/modal.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/modal/modal.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/notification/notification.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/notification/notification.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/notification/notification.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/notification/notification.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/privacypolicy/privacypolicy.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/privacypolicy/privacypolicy.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/privacypolicy/privacypolicy.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/privacypolicy/privacypolicy.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/profile/profile.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/profile/profile.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/profile/profile.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/profile/profile.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/saved/saved.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/saved/saved.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/saved/saved.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/saved/saved.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/settings/settings.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/settings/settings.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/settings/settings.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/settings/settings.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/signup/signup.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/signup/signup.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/signup/signup.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/signup/signup.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/signup/signup.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/signup/signup.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/slides/slides.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/slides/slides.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/slides/slides.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/slides/slides.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/termsconditions/termsconditions.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/termsconditions/termsconditions.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/termsconditions/termsconditions.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/termsconditions/termsconditions.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/update/update.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/update/update.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/update/update.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/update/update.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/update/update.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/imgs/lap.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/imgs/lap.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/imgs/linkedin1.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/imgs/linkedin1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/imgs/map2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/imgs/map2.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/imgs/noti.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/imgs/noti.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/theme/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/theme/variables.scss" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="765564033">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.157" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.6513" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="9" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="excluded.www.directory" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c3634c2-8fc1-4317-a74c-9e4effb70522" name="Default Changelist" comment="" />
+      <created>1555774826642</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555774826642</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3296131" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="TODO" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

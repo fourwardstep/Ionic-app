@@ -28,7 +28,8 @@ export class EditInfoPage implements OnInit {
   ngAfterViewInit() {
     
   }
-
+  
+  
   editUser(id) {
     this.user_id = id;
     this.service.getUserWithId(id).subscribe((user: User) => {
@@ -38,6 +39,7 @@ export class EditInfoPage implements OnInit {
 
     
   }
+  
 
   populateForm(user) {
     this.service.updatedUser.patchValue(user);

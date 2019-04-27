@@ -19,7 +19,7 @@ export class SignupPage implements OnInit {
       name : new FormControl('',Validators.required),
       email : new FormControl('',[Validators.required,Validators.email]),
       username : new FormControl('',[Validators.required]),
-      password : new FormControl('',[Validators.required,Validators.maxLength(6),Validators.maxLength(10)]),
+      password : new FormControl('',[Validators.required,Validators.minLength(6),Validators.maxLength(10)]),
       phone : new FormControl(''),
       title : new FormControl(''),
       company : new FormControl(''),
@@ -33,12 +33,16 @@ export class SignupPage implements OnInit {
       if(res.success){
         this.presentToast();
           this.router.navigate(['/login']);
-        this.resetForm();
+          setTimeout(() => {
+            this.resetForm();
+          }, 2000);
       }
       else{
         this.presentToast1();
           this.router.navigate(['/home']);
-        this.resetForm();
+          setTimeout(() => {
+            this.resetForm();
+          }, 2000);
       }
     },(err:any)=>{
       console.log(err);

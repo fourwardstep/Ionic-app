@@ -2,12 +2,12 @@
   <ion-toolbar class="toolbar-background">
     <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
     <ion-buttons slot="end">
-      <ion-button color="secondary" fill="clear">
+      <ion-button id="mic" color="secondary" fill="clear">
         <ion-icon name="mic"></ion-icon>
       </ion-button>
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-button fill="clear" color="secondary" (click)="presentModal()">
+      <ion-button id="filter" fill="clear" color="secondary" (click)="presentModal()">
         <i class="fas fa fa-filter"></i>
       </ion-button>
     </ion-buttons>
@@ -20,40 +20,44 @@
     id="card-stack">
     <ion-card swingCard #swingCards *ngFor="let card of cards">
       <div class="parent">
-        <ion-img id="image" src="assets/imgs/lap.jpg" (click)="launchjobDescriptionPage(card)"></ion-img>
+        <ion-img src="assets/imgs/lap.jpg" (click)="launchjobDescriptionPage(card)"></ion-img>
         <div class="child">
           <ion-grid>
             <ion-row>
-              <ion-col>{{card.company}}</ion-col>
+              <ion-col id="cname">{{card.company}}</ion-col>
             </ion-row>
-            <ion-row>
-              <ion-col>{{card.jobtitle}}</ion-col>
-            </ion-row>
-            <ion-row>
-              <ion-col>2 days ago</ion-col>
+            <ion-row id="name">
+              <ion-col size="6">{{card.jobtitle}}</ion-col>
+              <ion-col offset="2" size="4">2 days ago</ion-col>
             </ion-row>
           </ion-grid>
         </div>
       </div>
       <ion-card-content>
-        <ion-grid>
-          <ion-row>
-            <ion-col size="4">Location</ion-col>
-            <ion-col size="8">{{card.location}}</ion-col>
-          </ion-row>
-          <ion-row>
-            <ion-col size="4">Job Type</ion-col>
-            <ion-col size="8">{{card.jobtype}}</ion-col>
-          </ion-row>
-          <ion-row>
-            <ion-col size="4">Job Description</ion-col>
-            <ion-col size="8">{{card.jobdescription}}</ion-col>
-          </ion-row>
-          <ion-row>
-            <ion-col size="4">Source</ion-col>
-            <ion-col size="8" style="color:purple;font-size: large;">STEPFOURWARD</ion-col>
-          </ion-row>
-        </ion-grid>
+        <div class="container">
+					<tr>
+						<td class="label">Location</td>
+						<td class="des">{{ card.location }}</td>
+					</tr>
+					<tr>
+						<td class="label">Type</td>
+						<td class="des">{{ card.jobtype }}</td>
+					</tr>
+					<tr>
+						<td class="label">salary</td>
+						<td class="des">{{ card.jobtype }}</td>
+					</tr>
+					<tr>
+						<td class="label">Description</td>
+						<td class="des lmt">{{ card.jobdescription.slice(0, 75) }}</td>
+					</tr>
+					<tr>
+						<td class="label">Source</td>
+						<td class="des" style="font-weight:bold;color: #0bb8cc;text-transform: uppercase">
+						Stepfourward
+						</td>
+					</tr>
+				</div>
       </ion-card-content>
     </ion-card>
   </div>

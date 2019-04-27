@@ -1,70 +1,371 @@
-page-profile {
-    
-    #box {
-        height: 40%;
-        width: 100%;
-        background: #3BABE3;
-        position: relative;
+
+ion-content {
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+    top: 0%;
+    display:block;
+    width: 100%;
+    height: 235px;
+    background-color: #0bb8cc;
+}
+
+.edit {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    ion-button {
+        font-size: 14px;
     }
+    ion-button {
+        color: #ffffff;
+        text-transform: capitalize;
+    }
+}
 
- #btn { 
-     position: absolute;
-     right:5px;
- }
+.profilepic {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-35%);
+    display:block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: auto;
+    border: 1px solid #ffffff;
 
-    #ppic {
-        
-       position: absolute;
-        padding-top: 40px;
-        width: 100px;
-        height: 100px;
-        top:50%;
+    ion-avatar {
+     width: 80px;
+     height: 80px;
+    }
+}
+
+.name {
+    position: absolute;
+    top: 56%;
+    display:block;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    h5 {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    p {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: normal;
+    }
+}
+
+div.divider {
+    padding: 5px;
+    background-color: #f2f2f2;
+    background-clip: border-box;
+    border-bottom-style:ridge; 
+    
+}
+
+span.p {
+    font-size: 10px;
+    color: rgb(184, 184, 184);  
+}
+
+ span.h6 {
+color: #0bb8cc;
+font-size: 12px;
+font-weight: bold;
+float:right;
+padding: 5px;
+}
+
+div.content {
+    padding: 10px;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border-bottom-style:ridge;
+}
+
+.h5 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 0.2px;
+}
+
+span.p2 {
+    font-size: 14px;
+    color: rgb(184, 184, 184);
+}
+
+span.p1 {
+    font-size: 14px;
+    color: rgb(184, 184, 184);
+    float: right;
+    padding-top: 8px;
+}
+
+div.content1 {
+    padding: 12px;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border-bottom-style:ridge;
+    display: flex;
+    align-content: center;
+}
+
+span.p3 {
+    font-size: 14px;
+    color: rgb(184, 184, 184);
+}
+
+   
+@media screen and (min-width:768px) {
+    
+.container {
+    position: relative;
+    top: 0%;
+    display:block;
+    width: 100%;
+    height: 400px;
+    background-color: #0bb8cc;
+}
+
+.edit {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    ion-button {
+        font-size: 22px;
+    }
+    ion-button {
+        color: #ffffff;
+        text-transform: capitalize;
+    }
+}
+
+.profilepic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display:block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    border: 1px solid #ffffff;
+
+    ion-avatar {
+     width: 150px;
+     height: 150px;
+    }
+}
+
+.name {
+    position: absolute;
+    top: 70%;
+    display:block;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    h5 {
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    p {
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: normal;
+    }
+}
+
+div.divider {
+    padding: 13px;
+    background-color: #f2f2f2;
+    background-clip: border-box;
+    border-bottom-style:ridge; 
+    
+}
+
+span.p {
+    font-size: 18px;
+    color: rgb(184, 184, 184);  
+}
+
+ span.h6 {
+color: #0bb8cc;
+font-size: 18px;
+font-weight: bold;
+float:right;
+}
+
+div.content {
+    padding: 18px;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border-bottom-style:ridge;
+}
+
+.h5 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.2px;
+}
+
+span.p2 {
+    font-size: 22px;
+    color: rgb(184, 184, 184);
+}
+
+span.p1 {
+    font-size: 24px;
+    color: rgb(184, 184, 184);
+    float: right;
+    margin-right: 5px;
+    padding-top: 8px;
+}
+
+div.content1 {
+    padding: 18px;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border-bottom-style:ridge;
+    display: flex;
+    align-content: center;
+}
+
+span.p3 {
+    font-size: 22px;
+    color: rgb(184, 184, 184);
+}
+
+
+}
+
+@media screen and (min-width:992px) {
+    
+    .container {
+        position: relative;
+        top: 0%;
+        display:block;
+        width: 100%;
+        height: 500px;
+        background-color: #0bb8cc;
+    }
+    
+    .edit {
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        ion-button {
+            font-size: 30px;
+        }
+        ion-button {
+            color: #ffffff;
+            text-transform: capitalize;
+        }
+    }
+    
+    .profilepic {
+        position: absolute;
+        top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        display:block;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        margin: auto;
+        border: 1px solid #ffffff;
+    
+        ion-avatar {
+         width: 180px;
+         height: 180px;
+        }
     }
     
+    .name {
+        position: absolute;
+        top: 70%;
+        display:block;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        h5 {
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        p {
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: normal;
+        }
+    }
+
+    div.divider {
+        padding: 16px;
+        background-color: #f2f2f2;
+        background-clip: border-box;
+        border-bottom-style:ridge; 
+        
+    }
     
-    #name {
+    span.p {
+        font-size: 24px;
+        color: rgb(184, 184, 184);  
+    }
+    
+     span.h6 {
+    color: #0bb8cc;
+    font-size: 24px;
+    font-weight: bold;
+    float:right;
+    }
+    
+    div.content {
+        padding: 26px;
+        background-color: #ffffff;
+        background-clip: border-box;
+        border-bottom-style:ridge;
+    }
+    
+    .h5 {
+        font-size: 28px;
         font-weight: bold;
-        font-size: 17px;
-        color: white;
-        text-align: center;
+        line-height: 2px;
     }
-    #loc {
-        text-align: center;
-        font-size: 14px;
-        color: white;
-        // position: relative;
-        // top: 1px;
+    
+    span.p2 {
+        font-size: 28px;
+        color: rgb(184, 184, 184);
+    }
+    
+    span.p1 {
+        font-size: 30px;
+        color: rgb(184, 184, 184);
+        float: right;
+        margin-right: 10px;
+        padding-top: 8px;
+    }
+    
+    div.content1 {
+        padding: 22px;
+        background-color: #ffffff;
+        background-clip: border-box;
+        border-bottom-style:ridge;
+        display: flex;
+        align-content: center;
+    }
+    
+    span.p3 {
+        font-size: 28px;
+        color: rgb(184, 184, 184);
     }
 
-    ion-item-divider {
-        height: 3px;
-        width: 100%;
-    }
-    ion-item {
-        height: 8px;
-        width: 100%; 
     }
 
-    ion-list {
-        height: 50%;
-    }
-    .toolbar-background {
-        background-color: white;
-    }
-    .tabs .tabbar {
-        background-color: white;
-    }
-    .items {
-        border: 1px solid #E0E0E0;
-    }
-    ion-label {
-        font-size: 12px;
-        color: grey;
-    }
-    .text-input {
-        font-size: 12px;
-    }
-   
-}

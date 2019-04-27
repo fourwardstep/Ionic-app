@@ -1,7 +1,19 @@
-.scroll-content {
-    overflow: hidden;
+ion-content {
+    position: relative;
 }
-#mapimg {
+div {
+    position: absolute;
+    top: 0%;
     width: 100%;
-    height: 40%;
+    height: 260px;
+}
+
+ion-list {
+    position: absolute;
+    top: 260px;
+}
+
+.btn {
+    position: absolute;
+    top: 90%;
 }

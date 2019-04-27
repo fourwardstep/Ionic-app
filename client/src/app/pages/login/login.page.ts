@@ -59,17 +59,19 @@ export class LoginPage implements OnInit {
       if (res.success) {
         this.service.storeUserData(res.token, res.user);
         this.presentToast();
+        this.router.navigate(['/location']);
         setTimeout(() => {
-          this.router.navigate(['/location']);
-        }, 1000);
-        this.resetForm();
+          this.resetForm();
+        }, 2000);
+        
       }
       else {
         this.presentToast1();
+        this.router.navigate(['/home']);
         setTimeout(() => {
-          this.router.navigate(['/home']);
-        }, 1000);
-        this.resetForm();
+          this.resetForm();
+        }, 2000);
+        
       }
     }, (err: any) => {
       console.log(err);

@@ -3,14 +3,14 @@
         
   <ion-list>
    <ion-item *ngFor="let failedjob of this.service.failedJobs">   
-     <ion-avatar slot="start" ion-checkbox checked="false">
+     <ion-avatar slot="start">
        <div id="text">
-          <h6>{{ failedjob.companyTitle.charAt(0) }}</h6>
+          <h6>{{failedjob.companyTitle.charAt(0)}}</h6>
        </div>
      <ion-icon name="close-circle"></ion-icon>  
      </ion-avatar>
      <ion-label lines="none">
-         <h6>{{ failedjob.companyTitle }}</h6>
+         <h5>{{ failedjob.companyTitle }}</h5>
          <p id="p">Failed at {{  failedjob.date }}</p>
          <p id="p1">{{ failedjob.jobTitle }}</p>
        </ion-label>

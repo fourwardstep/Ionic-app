@@ -1,0 +1,239 @@
+#heading {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ion-content {
+    position: relative;
+}
+
+.note {
+    top: 0;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 0;
+    padding-bottom: 5px;
+   
+}
+
+.note p {
+    font-size: 14px;
+    color: #a2a4ab;
+}
+
+.resume {
+    border-top:0.5px inset #ffffff;  
+}
+
+ion-list {
+    margin-top: 10px;
+}
+
+ion-item {
+    font-size: 15px;
+    }
+
+    ion-input {
+        margin-left: 15px;
+    }
+
+    @media  screen and (max-width:320px){
+
+        #heading {
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        
+        ion-content {
+            position: relative;
+        }
+        
+        .note {
+            
+            top: 0;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 0;
+            padding-bottom: 5px;
+           
+        }
+        
+        .note p {
+            font-size: 12px;
+            color: #a2a4ab;
+        }
+        
+        .resume {
+            border-top:0.5px solid black; 
+        }
+        
+        ion-list {
+            margin-top: 10px;
+        }
+        
+        ion-item {
+            font-size: 15px;
+            }
+    
+            ion-input {
+                margin-left: 15px;
+            }
+        
+    }
+
+    @media  screen and (min-width:375px){
+
+        #heading {
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        ion-content {
+            position: relative;
+        }
+        
+        .note {
+            
+            top: 0;
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-top: 0;
+            padding-bottom: 5px;
+           
+        }
+        
+        .note p {
+            font-size: 12px;
+            color: #a2a4ab;
+        }
+        
+        .resume {
+            border-top:2px solid black; 
+        }
+    
+        
+        ion-list {
+            margin-top: 20px;
+        }
+        
+    
+            ion-input {
+                margin-left: 25px;
+            }
+        
+    }
+
+
+
+@media screen and (min-width:768px){
+
+    #heading {
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    ion-content {
+        position: relative;
+    }
+    
+    .note {
+        
+        top: 0;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 0;
+        padding-bottom: 5px;
+       
+    }
+    
+    .note p {
+        font-size: 20px;
+        color: #a2a4ab;
+    }
+    
+    .resume {
+        border-top:2px solid black; 
+    }
+
+    ion-label #label {
+        font-size: 15px;
+        padding: 10px;
+    }
+    
+    ion-list {
+        margin-top: 20px;
+    }
+    
+    ion-item {
+        font-size: 30px;
+        padding: 12px;
+        }
+
+        ion-input {
+            margin-left: 35px;
+        }
+    
+}
+
+@media  screen and (min-width:992px){
+
+    #heading {
+        color: black;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    
+    ion-content {
+        position: relative;
+    }
+    
+    .note {
+        top: 0; 
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 0;
+        padding-bottom: 5px;
+       
+    }
+    
+    .note p {
+        font-size: 25px;
+        color: #a2a4ab;
+    }
+    
+    .resume {
+        border-top:2px solid black; 
+    }
+
+    ion-label #label {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+
+    
+    ion-list {
+        margin-top: 20px;
+    }
+    
+    ion-item {
+        font-size: 35px;
+        padding: 15px;
+        }
+
+        ion-input {
+            margin-left: 35px;
+        }
+    
+}
+
+
